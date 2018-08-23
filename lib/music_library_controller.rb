@@ -68,8 +68,7 @@ def list_songs_by_artist
   def play_song
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
-    song = Song.all(input)
-  end 
+    if (1..Song.all.length)
   
    
 end  
